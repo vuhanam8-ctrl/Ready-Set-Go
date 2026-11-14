@@ -1,10 +1,14 @@
-# Front page
+# Ready Set Go
 
-Open index.html in your browser to view the page. No installation or build needed.
+Red background with one transparent, centered model area. No visible text or controls.
 
-Three empty model containers are ready: model-main, model-second, model-third.
-These are layout placeholders; a Live2D web runtime is not connected yet.
+## Live2D integration
 
-Put each exported Live2D model into its own folder under models/, keeping its original folder structure. Include the .model3.json, .moc3, textures, and associated exported files. A Cubism editor project alone is not a web export.
+The loader uses live2d-web 0.9.0, whose documented Cubism 5.3 integration uses the Framework 5-r.5 adapter. The model and Cubism Core are not included yet, so the stage intentionally stays empty.
 
-Once the files are here, the next step is to connect a compatible web runtime and render each model into its container.
+When the owner supplies the exported model folder, preserve all relative file paths and set modelSource in model-config.js to its .model3.json. Supply the matching official Cubism Core 5.3 file at runtime/live2dcubismcore.min.js. Then verify rendering, transparency, motions, and all referenced textures with the actual model before claiming runtime compatibility is tested.
+
+Runtime documentation: https://live2d-web.heonys.dev/docs/en/core-and-models
+Official SDK: https://www.live2d.com/en/sdk/download/web/
+
+The page is served directly by GitHub Pages; no build step is required.
