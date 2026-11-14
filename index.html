@@ -8,14 +8,15 @@
     :root { color-scheme: dark; background: #e71932; }
     * { box-sizing: border-box; }
     body { margin: 0; }
-    main { min-height: 100vh; min-height: 100svh; display: grid; place-items: center; }
-    #model-main { position: relative; width: min(90vw, 1100px); height: 88svh; background: transparent; }
+    main { min-height: 100vh; min-height: 100svh; overflow: hidden; }
+    #model-frame { position: relative; width: 50vw; height: 100svh; overflow: hidden; background: transparent; }
+    #model-main { position: absolute; left: 50%; top: 50%; width: 88svh; height: 88svh; background: transparent; transform: translate(-50%, -50%) rotate(130deg); transform-origin: center; }
     #model-main canvas { display: block; width: 100%; height: 100%; background: transparent; }
   </style>
 </head>
 <body>
   <main aria-label="Character stage">
-    <div id="model-main"></div>
+    <div id="model-frame"><div id="model-main"></div></div>
   </main>
   <script src="./runtime/live2dcubismcore.min.js"></script>
   <script type="module" src="./live2d.js"></script>
