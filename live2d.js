@@ -3,7 +3,7 @@ import { modelSource, coreSource } from './model-config.js';
 // Render the exported model upright, using its authored looping opening motion.
 if (modelSource) {
   try {
-    const { createLive2D } = await import('https://esm.sh/live2d-web@0.9.0');
+    const { createLive2D } = await import('./runtime/live2d-web/index.mjs');
     const character = await createLive2D({
       container: document.querySelector('#model-main'),
       coreUrl: new URL(coreSource, import.meta.url).href,

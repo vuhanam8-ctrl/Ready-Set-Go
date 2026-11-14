@@ -19,5 +19,5 @@ No SDK sample models are included. The owner must have permission to publish any
 
 ## live2d-web
 
-The application loader references live2d-web 0.9.0 via esm.sh. This is a separate third-party integration, not Live2D Cubism Core. Its upstream license and notices continue to apply:
+The application serves the original live2d-web 0.9.0 modules from runtime/live2d-web. Its MIT license, bundled Cubism Framework licensing, and upstream notices are preserved there as LICENSE, LICENSES.md, and THIRD_PARTY_NOTICES.md. This is a separate integration from Cubism Core. Upstream:
 https://www.npmjs.com/package/live2d-web/v/0.9.0
