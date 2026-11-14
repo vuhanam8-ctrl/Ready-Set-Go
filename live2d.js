@@ -9,7 +9,8 @@ if (modelSource) {
       coreUrl: new URL(coreSource, import.meta.url).href,
       src: new URL(modelSource, import.meta.url).href,
       fit: 'full',
-      resolution: Math.min(3, Math.max(2, window.devicePixelRatio || 1)),
+      quality: { desktopMaxResolution: 1.5, mobileMaxResolution: 1, desktopPixelBudget: 1500000, mobilePixelBudget: 1000000 },
+      maxFps: 60,
       idleMotion: 'Idle',
       followPointer: false,
     });
