@@ -1,0 +1,235 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "Hair Move Back"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "Hair Move Root"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "Hair Move Front"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "Hair Move Side"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "Neck Head Move"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "layer1"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "",
+			"Name": "layer2"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "",
+			"Name": "body"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "",
+			"Name": "Body Twitch"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "",
+			"Name": "Arm Back"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "",
+			"Name": "Arm Back Rotation"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "hand"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "",
+			"Name": "Waist Jewel1"
+		},
+		{
+			"Id": "Param11",
+			"GroupId": "",
+			"Name": "Waist Jewel 2"
+		},
+		{
+			"Id": "Param12",
+			"GroupId": "",
+			"Name": "Jewel 3"
+		},
+		{
+			"Id": "Param13",
+			"GroupId": "",
+			"Name": "Jewel 4"
+		},
+		{
+			"Id": "Param14",
+			"GroupId": "",
+			"Name": "Jewel 5"
+		},
+		{
+			"Id": "Param15",
+			"GroupId": "",
+			"Name": "Robe"
+		},
+		{
+			"Id": "Param16",
+			"GroupId": "",
+			"Name": "Cloak"
+		},
+		{
+			"Id": "Param18",
+			"GroupId": "",
+			"Name": "Middle Cloak"
+		},
+		{
+			"Id": "Param17",
+			"GroupId": "",
+			"Name": "Back Cloak"
+		},
+		{
+			"Id": "Param19",
+			"GroupId": "",
+			"Name": "leg"
+		},
+		{
+			"Id": "Param20",
+			"GroupId": "",
+			"Name": "Left lower Leg"
+		},
+		{
+			"Id": "Param21",
+			"GroupId": "",
+			"Name": "Right Upper Leg"
+		},
+		{
+			"Id": "Param22",
+			"GroupId": "",
+			"Name": "Right Thigh"
+		},
+		{
+			"Id": "Param23",
+			"GroupId": "",
+			"Name": "Badge"
+		},
+		{
+			"Id": "Param24",
+			"GroupId": "",
+			"Name": "Float"
+		},
+		{
+			"Id": "Param25",
+			"GroupId": "",
+			"Name": "Front Arm-Elbow"
+		},
+		{
+			"Id": "Param26",
+			"GroupId": "",
+			"Name": "Front Arm-Collar"
+		},
+		{
+			"Id": "Param27",
+			"GroupId": "",
+			"Name": "Sleeve"
+		},
+		{
+			"Id": "Param28",
+			"GroupId": "",
+			"Name": "Pointing Hand Angle"
+		},
+		{
+			"Id": "Param29",
+			"GroupId": "",
+			"Name": "Pinky Angle"
+		},
+		{
+			"Id": "Param30",
+			"GroupId": "",
+			"Name": "Pinky Warp"
+		},
+		{
+			"Id": "Param31",
+			"GroupId": "",
+			"Name": "Pointing Hand-Main"
+		},
+		{
+			"Id": "Param32",
+			"GroupId": "",
+			"Name": "Middle Fingers"
+		},
+		{
+			"Id": "Param33",
+			"GroupId": "",
+			"Name": "Arm Sleeve Movement"
+		},
+		{
+			"Id": "Param34",
+			"GroupId": "",
+			"Name": "Sleeve Movement"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "Y-Top"
+		},
+		{
+			"Id": "Part2",
+			"Name": "Y-Bottom"
+		},
+		{
+			"Id": "frontpointyhand",
+			"Name": "frontpointyhand"
+		},
+		{
+			"Id": "headhair",
+			"Name": "headhair"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamHairBack",
+			"Param"
+		],
+		[
+			"ParamHairFront",
+			"ParamHairSide"
+		],
+		[
+			"Param3",
+			"Param4"
+		],
+		[
+			"Param5",
+			"Param6"
+		],
+		[
+			"Param10",
+			"Param11"
+		],
+		[
+			"Param12",
+			"Param13"
+		]
+	]
+}

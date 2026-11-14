@@ -1,0 +1,29 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "joe2CUT.moc3",
+    "Textures": [
+      "joe2CUT.2048/texture_00.png"
+    ],
+    "DisplayInfo": "joe2CUT.cdi3.json",
+    "Motions": {
+      "Idle": [
+        {
+          "File": "OpeningPose.motion3.json"
+        }
+      ]
+    }
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": []
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": []
+    }
+  ]
+}

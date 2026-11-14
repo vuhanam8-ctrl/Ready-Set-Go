@@ -1,3 +1,2 @@
-// Set this to the exported .model3.json path when the model files arrive.
-export const modelSource = null;
+export const modelSource = './models/work/joe2CUT.model3.json';
 export const coreSource = './runtime/live2dcubismcore.min.js';

@@ -1,6 +1,6 @@
 import { modelSource, coreSource } from './model-config.js';
 
-// Leave the stage completely empty until a model has been supplied.
+// Render the exported model upright, using its authored looping opening motion.
 if (modelSource) {
   try {
     const { createLive2D } = await import('https://esm.sh/live2d-web@0.9.0');
@@ -9,6 +9,8 @@ if (modelSource) {
       coreUrl: new URL(coreSource, import.meta.url).href,
       src: new URL(modelSource, import.meta.url).href,
       fit: 'full',
+      idleMotion: 'Idle',
+      followPointer: false,
     });
     const onVisibility = () => document.hidden ? character.pause() : character.resume();
     document.addEventListener('visibilitychange', onVisibility);
