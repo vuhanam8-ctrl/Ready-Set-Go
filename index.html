@@ -12,12 +12,11 @@
     .stages { position: relative; width: min(94vw, 1400px); height: 88svh; isolation: isolate; }
     .stage { position: absolute; }
     .model-mount { position: absolute; inset: 0; background: #000000; }
-    .stage-main { left: 2%; top: 9%; width: 62%; height: 82%; z-index: 0; transform: rotate(-7deg); clip-path: polygon(0 5%, 96% 0, 100% 93%, 5% 100%); }
-    .stage-main .model-mount { clip-path: polygon(0 5%, 96% 0, 100% 93%, 5% 100%); }
-    .stage-second { right: 1%; top: 2%; width: 48%; height: 53%; z-index: 1; transform: rotate(7deg); clip-path: polygon(5% 0, 100% 8%, 94% 100%, 0 91%); }
-    .stage-second .model-mount { background: #808080; clip-path: polygon(5% 0, 100% 8%, 94% 100%, 0 91%); }
-    .stage-third { right: 0; bottom: 1%; width: 49%; height: 49%; z-index: 2; transform: rotate(-5deg); clip-path: polygon(0 9%, 95% 0, 100% 91%, 6% 100%); }
-    .stage-third .model-mount { background: #ffffff; clip-path: polygon(0 9%, 95% 0, 100% 91%, 6% 100%); }
+    .stage-main { left: 2%; top: 9%; width: 62%; height: 82%; z-index: 0; }
+    .stage-second { right: 1%; top: 2%; width: 48%; height: 53%; z-index: 1; }
+    .stage-second .model-mount { background: #808080; }
+    .stage-third { right: 0; bottom: 1%; width: 49%; height: 49%; z-index: 2; }
+    .stage-third .model-mount { background: #ffffff; }
     .model-mount canvas { display: block; width: 100%; height: 100%; }
     @media (max-width: 650px) {
       .stages { width: 90vw; height: 83svh; }
