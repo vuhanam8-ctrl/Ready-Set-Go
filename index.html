@@ -5,18 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ready Set Go</title>
   <style>
-    :root { color-scheme: light; background: #f5f5ef; }
+    :root { color-scheme: dark; background: #e71932; }
     * { box-sizing: border-box; }
     body { margin: 0; }
     main { min-height: 100vh; min-height: 100svh; display: grid; place-items: center; overflow: hidden; }
-    .stages { position: relative; width: min(88vw, 1000px); height: min(78svh, 660px); isolation: isolate; }
-    .stage { position: absolute; overflow: hidden; border: 1px solid #dbdfd4; border-radius: 18px; box-shadow: 0 16px 45px #343b380d; }
-    .stage-main { left: 5%; top: 6%; width: 60%; height: 84%; background: #edf0e7; z-index: 1; }
-    .stage-second { right: 3%; top: 0; width: 45%; height: 56%; background: #edeae4; z-index: 0; }
-    .stage-third { right: 0; bottom: 0; width: 46%; height: 55%; background: #e8ecec; z-index: 2; }
-    .model-mount { position: absolute; inset: 0; }
+    .stages { position: relative; width: min(94vw, 1400px); height: 88svh; isolation: isolate; }
+    .stage { position: absolute; background: #f5f2e9; padding: 7px; filter: drop-shadow(12px 14px 0 #650915); }
+    .model-mount { position: absolute; inset: 7px; background: #141414; }
+    .stage-main { left: 2%; top: 9%; width: 62%; height: 82%; z-index: 1; transform: rotate(-7deg); clip-path: polygon(0 5%, 96% 0, 100% 93%, 5% 100%); }
+    .stage-main .model-mount { clip-path: polygon(0 5%, 96% 0, 100% 93%, 5% 100%); }
+    .stage-second { right: 1%; top: 2%; width: 48%; height: 53%; z-index: 0; transform: rotate(7deg); clip-path: polygon(5% 0, 100% 8%, 94% 100%, 0 91%); }
+    .stage-second .model-mount { background: #272727; clip-path: polygon(5% 0, 100% 8%, 94% 100%, 0 91%); }
+    .stage-third { right: 0; bottom: 1%; width: 49%; height: 49%; z-index: 2; transform: rotate(-5deg); clip-path: polygon(0 9%, 95% 0, 100% 91%, 6% 100%); }
+    .stage-third .model-mount { background: #393939; clip-path: polygon(0 9%, 95% 0, 100% 91%, 6% 100%); }
     .model-mount canvas { display: block; width: 100%; height: 100%; }
-    @media (max-width: 650px) { .stages { width: 94vw; height: 72svh; } .stage-main { left: 0; width: 70%; } .stage-second { right: 0; width: 52%; height: 48%; } .stage-third { width: 58%; height: 48%; } }
+    @media (max-width: 650px) {
+      .stages { width: 90vw; height: 83svh; }
+      .stage-main { left: 0; top: 17%; width: 78%; height: 67%; }
+      .stage-second { right: 0; top: 3%; width: 68%; height: 42%; }
+      .stage-third { right: -2%; bottom: 0; width: 72%; height: 39%; }
+    }
   </style>
 </head>
 <body>
