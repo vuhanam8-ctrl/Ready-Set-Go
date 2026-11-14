@@ -4,9 +4,9 @@ Red background with one transparent, centered model area. No visible text or con
 
 ## Live2D integration
 
-The loader uses live2d-web 0.9.0, whose documented Cubism 5.3 integration uses the Framework 5-r.5 adapter. The model and Cubism Core are not included yet, so the stage intentionally stays empty.
+The page preloads the owner's unchanged Cubism Core runtime from Cubism SDK for Web 5-r.5 at runtime/live2dcubismcore.min.js. No SDK sample models are included. See THIRD_PARTY_NOTICES.md for licensing and publication requirements.
 
-When the owner supplies the exported model folder, preserve all relative file paths and set modelSource in model-config.js to its .model3.json. Supply the matching official Cubism Core 5.3 file at runtime/live2dcubismcore.min.js. Then verify rendering, transparency, motions, and all referenced textures with the actual model before claiming runtime compatibility is tested.
+The model loader uses live2d-web 0.9.0, whose documented Cubism 5.3 integration uses the Framework 5-r.5 adapter. Model rendering remains untested until the owner's actual model files arrive. Set modelSource in model-config.js to the exported .model3.json, preserving its referenced folder structure. The stage intentionally stays empty while modelSource is null.
 
 Runtime documentation: https://live2d-web.heonys.dev/docs/en/core-and-models
 Official SDK: https://www.live2d.com/en/sdk/download/web/
